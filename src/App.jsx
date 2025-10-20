@@ -48,7 +48,7 @@ export const App = () => {
         <tbody>
           {goods.map(good => {
             const isSelected = selectedGood === good;
-            const showAdd = selectedGood === '' || selectedGood !== good;
+            const showAdd = selectedGood !== good;
             const showRemove = selectedGood === good;
 
             return (
